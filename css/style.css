@@ -1,0 +1,143 @@
+@font-face {
+  font-family: muliBold;
+  src: url(../fonts/Muli-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+  padding-top: 135px;
+}
+
+body .headerTop {
+  position: relative;
+  background: #000000;
+}
+
+body .headerTop .wrapper {
+  padding: 0 9%;
+  position: relative;
+  min-height: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: muliBold;
+  font-size: 14px;
+}
+
+body .headerTop .wrapper .topBarLeft {
+  color: #ffffff;
+}
+
+body .headerTop .wrapper .topBarLeft i {
+  color: #ac161a;
+}
+
+body .headerTop .wrapper .topBarLeft .mr-10 {
+  padding-right: 10px;
+}
+
+body .headerTop .wrapper .topBarRight {
+  z-index: 2;
+}
+
+body .headerTop .wrapper .topBarRight a {
+  color: #ffffff;
+}
+
+body .headerTop .wrapper .topBarRight i {
+  color: #c20505;
+}
+
+body .headerTop .wrapper .topBarRight .contact-info {
+  margin-right: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+body .headerTop .wrapper .topBarRight .contact-info .py-25 {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+body .headerTop .wrapper .topBarRight .contact-info .py-25 a {
+  text-decoration: none;
+}
+
+body .headerTop .wrapper .topBarRight .contact-info .py-25 a .mr-10 {
+  padding-right: 10px;
+}
+
+body .headerTop .wrapper .topBarRight .social-links {
+  background: #c20505;
+  position: relative;
+  z-index: 1;
+}
+
+body .headerTop .wrapper .topBarRight .social-links li {
+  display: inline-block;
+  padding: 15px 15px;
+  line-height: 1;
+}
+
+body .headerTop .wrapper .topBarRight .social-links li a {
+  overflow: hidden;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 26px;
+}
+
+body .headerTop .wrapper .topBarRight .social-links li a i {
+  color: #ffffff;
+}
+
+body .navbar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+  padding: 2rem 0;
+}
+
+body .navbar .menu-wrap {
+  padding: 0 9.5%;
+}
+
+body .navbar .menu-wrap .logo {
+  margin-right: 20px;
+  position: relative;
+  z-index: 35;
+}
+
+body .navbar .menu-wrap .navbar-nav {
+  float: right;
+  margin-left: auto;
+}
+
+body .navbar .menu-wrap .navbar-nav .nav-link {
+  position: relative;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+  font-family: Roboto-bold;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body .slider {
+  margin-top: -70px;
+  max-height: 1020px;
+  overflow: hidden;
+}
+
+body .slider .slider-menu .slide img {
+  width: auto;
+}
+/*# sourceMappingURL=style.css.map */
