@@ -8,6 +8,21 @@
   src: url(../fonts/Roboto-Bold.ttf);
 }
 
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url("../fonts/Poppins-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: Poppins-mid;
+  src: url("../fonts/Poppins-Medium.otf");
+}
+
 body {
   padding-top: 135px;
 }
@@ -182,9 +197,69 @@ body .navbar .menu-wrap .navbar-nav .nav-link {
   color: #ffffff;
 }
 
+body .overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body .slider {
   margin-top: -70px;
+  z-index: 1;
   overflow: hidden;
+  position: relative;
+}
+
+body .slider .slider-text {
+  position: absolute;
+  padding-left: 25%;
+  padding-right: 33%;
+  padding-top: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  z-index: 3;
+}
+
+body .slider .slider-text .text-head {
+  font-family: Poppins-bold;
+  font-size: 100px;
+  color: #ffffff;
+}
+
+body .slider .slider-text .text-sub {
+  font-family: Poppins-mid;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+body .slider .slider-text a {
+  background: #c20505;
+  padding: 15px 44px;
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body .slider .slider-text a :hover {
+  background: #000000;
+  -webkit-transition: 8ms;
+  transition: 8ms;
+}
+
+body .slider .slider-text a .sbtn {
+  margin: 0 10px;
 }
 
 body .slider .slider-menu .slide {
@@ -196,5 +271,66 @@ body .slider .slider-menu .slide img {
      object-fit: cover;
   width: 100%;
   height: 100;
+}
+
+body .welcome-content {
+  padding: 80px 0;
+}
+
+body .welcome-content .wc-padding {
+  padding: 0 9.5%;
+}
+
+body .welcome-content .wc-padding img {
+  margin-top: 8px;
+  max-width: 450px;
+  max-height: 530px;
+}
+
+body .welcome-content .wc-padding .section-title {
+  color: #404040;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  font-size: 38px;
+  font-weight: 700;
+  font-family: Roboto-Bold;
+}
+
+body .welcome-content .wc-padding .section-decs {
+  margin-bottom: 20px;
+  font-family: Roboto-Regular;
+  font-size: 19px;
+  font-weight: 100;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+body .welcome-content .wc-padding .button-group-wrapper {
+  margin-top: 40px;
+}
+
+body .welcome-content .wc-padding .button-group-wrapper .btn {
+  padding: 20px 55px;
+  border: 2px solid #c20505;
+  border-radius: 0;
+}
+
+body .welcome-content .wc-padding .button-group-wrapper .btn-primary {
+  background: #c20505;
+}
+
+body .welcome-content .wc-padding .button-group-wrapper .btn-primary:hover {
+  background: #ffffff;
+  color: #c20505;
+}
+
+body .welcome-content .wc-padding .button-group-wrapper .btn-outline-primary {
+  color: #c20505;
+}
+
+body .welcome-content .wc-padding .button-group-wrapper .btn-outline-primary:hover {
+  color: #ffffff;
+  background: #c20505;
 }
 /*# sourceMappingURL=style.css.map */

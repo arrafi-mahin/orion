@@ -6,6 +6,18 @@
   font-family: Roboto-bold;
   src: url(../fonts/Roboto-Bold.ttf);
 }
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins-bold;
+  src: url("../fonts/Poppins-ExtraBold.otf");
+}
+@font-face {
+  font-family: Poppins-mid;
+  src: url("../fonts/Poppins-Medium.otf");
+}
 body {
   padding-top: 135px;
   .headerTop {
@@ -154,10 +166,56 @@ body {
     }
   }
   // slider
+  .overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    display: flex;
+    justify-content: center;
+  }
   .slider {
     margin-top: -70px;
-
+    z-index: 1;
     overflow: hidden;
+    position: relative;
+    .slider-text {
+      .text-head {
+        font-family: Poppins-bold;
+        font-size: 100px;
+        color: #ffffff;
+      }
+      .text-sub {
+        font-family: Poppins-mid;
+        font-size: 40px;
+        color: #ffffff;
+      }
+
+      a {
+        :hover {
+          background: #000000;
+          transition: 8ms;
+        }
+        .sbtn {
+          margin: 0 10px;
+        }
+        background: #c20505;
+        padding: 15px 44px;
+        font-family: Roboto-Bold;
+        font-size: 20px;
+        text-decoration: none;
+        color: #ffffff;
+      }
+      position: absolute;
+      padding-left: 25%;
+      padding-right: 33%;
+      padding-top: 20%;
+      justify-content: center;
+      font-size: 50px;
+      z-index: 3;
+    }
+
     .slider-menu {
       .slide {
         max-height: calc(100vh -60px);
@@ -165,6 +223,65 @@ body {
           object-fit: cover;
           width: 100%;
           height: 100;
+        }
+      }
+    }
+  }
+  // Section 2
+  .welcome-content {
+    padding: 80px 0;
+    .wc-padding {
+      padding: 0 9.5%;
+      //image section
+      img {
+        margin-top: 8px;
+        max-width: 450px;
+        max-height: 530px;
+      }
+      // section title
+      .section-title {
+        color: #404040;
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+        font-size: 38px;
+        font-weight: 700;
+        font-family: Roboto-Bold;
+      }
+
+      //section description
+      p {
+        //here
+      }
+
+      .section-decs {
+        margin-bottom: 20px;
+        font-family: Roboto-Regular;
+        font-size: 19px;
+        font-weight: 100;
+        text-align: justify;
+        overflow-wrap: break-word;
+      }
+      .button-group-wrapper {
+        margin-top: 40px;
+        .btn {
+          padding: 20px 55px;
+          border: 2px solid #c20505;
+          border-radius: 0;
+        }
+        .btn-primary {
+          background: #c20505;
+          &:hover {
+            background: #ffffff;
+            color: #c20505;
+          }
+        }
+        .btn-outline-primary {
+          color: #c20505;
+          &:hover {
+            color: #ffffff;
+            background: #c20505;
+          }
         }
       }
     }
