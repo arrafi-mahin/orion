@@ -311,6 +311,9 @@ body .welcome-content .wc-padding .button-group-wrapper {
 }
 
 body .welcome-content .wc-padding .button-group-wrapper .btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding: 20px 55px;
   border: 2px solid #c20505;
   border-radius: 0;
@@ -332,5 +335,95 @@ body .welcome-content .wc-padding .button-group-wrapper .btn-outline-primary {
 body .welcome-content .wc-padding .button-group-wrapper .btn-outline-primary:hover {
   color: #ffffff;
   background: #c20505;
+}
+
+body #info-box .single-info-box {
+  background-size: cover !important;
+  padding: 85px 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 85px 100px;
+  text-align: center;
+}
+
+body #info-box .single-info-box:hover .single-info-icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+body #info-box .single-info-box .single-info-icon {
+  margin-bottom: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body #info-box .single-info-box h3 {
+  font-family: Roboto-Bold;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 17px;
+}
+
+body #info-box .single-info-box h3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body #info-box .single-info-box p {
+  color: #ffffff;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+body #info-card {
+  padding: 150px 0px;
+}
+
+body #info-card .single-info-card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #info-card .single-info-card a {
+  text-decoration: none;
+  text-align: center;
+}
+
+body #info-card .single-info-card h3 {
+  font-family: Roboto-Bold;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 17px;
+  color: #404040;
+  padding: 60px 0;
+}
+
+body #info-card .single-info-card p {
+  margin-bottom: 60px;
+  color: #707070;
+  font-size: 18px;
+  font-family: Roboto-Regular;
+}
+
+body #info-card .single-info-card .btn {
+  padding: 20px 55px;
+  border: 2px solid #c20505;
+  border-radius: 0;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 28%;
+}
+
+body #info-card .single-info-card .btn-primary {
+  background: #c20505;
+}
+
+body #info-card .single-info-card .btn-primary:hover {
+  background: #ffffff;
+  color: #c20505;
 }
 /*# sourceMappingURL=style.css.map */

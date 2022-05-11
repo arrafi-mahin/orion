@@ -250,9 +250,6 @@ body {
       }
 
       //section description
-      p {
-        //here
-      }
 
       .section-decs {
         margin-bottom: 20px;
@@ -265,6 +262,7 @@ body {
       .button-group-wrapper {
         margin-top: 40px;
         .btn {
+          align-self: center;
           padding: 20px 55px;
           border: 2px solid #c20505;
           border-radius: 0;
@@ -282,6 +280,82 @@ body {
             color: #ffffff;
             background: #c20505;
           }
+        }
+      }
+    }
+  }
+  //section 3
+  #info-box {
+    .single-info-box {
+      &:hover {
+        .single-info-icon {
+          transform: scale(1.5);
+        }
+      }
+      background-size: cover !important;
+      padding: 85px 120px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 85px 100px;
+      text-align: center;
+      .single-info-icon {
+        margin-bottom: 50px;
+        transition: 0.4s;
+      }
+      h3 {
+        font-family: Roboto-Bold;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 17px;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+      p {
+        color: #ffffff;
+        font-family: Roboto-Regular;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  // Section 4
+  #info-card {
+    padding: 150px 0px;
+    .single-info-card {
+      justify-content: center;
+      a {
+        text-decoration: none;
+        text-align: center;
+      }
+      h3 {
+        font-family: Roboto-Bold;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 17px;
+        color: #404040;
+        padding: 60px 0;
+      }
+      p {
+        margin-bottom: 60px;
+        color: #707070;
+        font-size: 18px;
+        font-family: Roboto-Regular;
+      }
+      .btn {
+        padding: 20px 55px;
+        border: 2px solid #c20505;
+        border-radius: 0;
+        margin-top: 40px;
+        display: flex;
+        margin: 0 28%;
+      }
+      .btn-primary {
+        background: #c20505;
+        &:hover {
+          background: #ffffff;
+          color: #c20505;
         }
       }
     }
