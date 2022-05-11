@@ -51,9 +51,6 @@ body {
           }
         }
         .social-links {
-          background: #c20505;
-          position: relative;
-          z-index: 1;
           li {
             display: inline-block;
             padding: 15px 15px;
@@ -71,15 +68,17 @@ body {
               }
             }
           }
-          // ::before {
-          //   position: absolute;
-          //   left: -58px;
-          //   top: 0;
-          //   content: "";
-          //   border-top: 60px solid #c20505;
-          //   border-left: 60px solid transparent;
-          //   border-right: 0;
-          // }
+        }
+        .redBg {
+          z-index: -1;
+          margin-left: -55px;
+          padding-left: 314px;
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 60px solid #c20505;
+          border-left: 70px solid transparent;
+          margin-right: 0px;
         }
       }
     }
@@ -157,13 +156,15 @@ body {
   // slider
   .slider {
     margin-top: -70px;
-    max-height: 1020px;
+
     overflow: hidden;
     .slider-menu {
       .slide {
+        max-height: calc(100vh -60px);
         img {
-          width: auto;
-          max-height: 1020px;
+          object-fit: cover;
+          width: 100%;
+          height: 100;
         }
       }
     }
