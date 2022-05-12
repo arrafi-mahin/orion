@@ -390,14 +390,14 @@ body #product-slider .vartical-text {
 }
 
 body #product-slider .vartical-text .big-text {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
 }
 
 body #product-slider .vartical-text .small-text {
-  font-size: 40px;
+  font-size: 30px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 21px;
@@ -405,7 +405,7 @@ body #product-slider .vartical-text .small-text {
 }
 
 body #product-slider .product-slider {
-  margin: 0 10rem;
+  margin: 0 auto;
 }
 
 body #product-slider .product-slider .slick-product-slider {
