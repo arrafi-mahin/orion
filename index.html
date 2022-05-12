@@ -290,16 +290,147 @@
         </div>
       </div>
     </section>
+    <!-- section 5 -->
+    <section id="product-slider">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="vartical-text">
+            <span class="big-text">PRODUCT</span>
+            <br />
+            <span class="small-text">CATEGORIES</span>
+          </div>
+          <div class="product-slider">
+            <div class="slick-slider">
+              <div class="single-slick-slide text-center">
+                <div
+                  class="product-img text-center d-flex justify-content-center align-items-center mx-0"
+                >
+                  <a href="#">
+                    <img
+                      width="241"
+                      height="264"
+                      src="./img/protective-wear-1.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <h3
+                  class="product-title text-center text-uppercase py-15 my-0 w-100"
+                >
+                  <a href="#" tabindex="-1">Protective Wear</a>
+                </h3>
+                Regardless of the job that needs to be done, we have a
+                protective suit to...
+              </div>
+              <div class="single-slick-slide text-center">
+                <div
+                  class="product-img text-center d-flex justify-content-center align-items-center mx-0"
+                >
+                  <a href="#">
+                    <img
+                      width="241"
+                      height="264"
+                      src="./img/protective-wear-1.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <h3
+                  class="product-title text-center text-uppercase py-15 my-0 w-100"
+                >
+                  <a href="#" tabindex="-1">Protective Wear</a>
+                </h3>
+                Regardless of the job that needs to be done, we have a
+                protective suit to...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 6 -->
+    <section class="welcome-content">
+      <div class="container-fluid wc-padding">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h1
+              class="section-title text-left text-sm-center text-md-left text-ls-left wow fadeInUp"
+            >
+              Protection Is What We Do Best
+            </h1>
+            <p class="section-decs">
+              Occupational hazards can be controlled and minimized in even the
+              most dangerous situations: we know what’s needed to outfit your
+              space for hazard detection, safety and response, and are
+              experienced in a range of environments, including gasplants,
+              schools, warehouses, factories, retail outlets, mines,
+              laboratories, and everyday work spaces. We work with an elite
+              group of safety equipment suppliers to ensure we can provide you
+              with a range of quality products. Over eighty percent of what we
+              sell is made and sourced locally or domestically. We also
+              recertify what we sell. Without compromise: the personal safety of
+              yourself and those around you deserve nothing less. While our
+              product offering draws customers in, our service is what makes
+              them come back. We have developed a reputation among clients for
+              our responsiveness, flexibility and expertise.
+            </p>
+            <div class="button-group-wrapper d-flex">
+              <a href="#" class="btn btn-primary btn-common"
+                ><span>Learn More</span></a
+              >
+              <a href="#" class="btn btn-outline-primary"
+                ><span>Get in touch</span></a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="text-center">
+              <div class="col-md-12">
+                <img class="img-fluid" src="./img/wc-sec2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container-fluid">
+        <div class="row justify-content-around align-items-center  footer-top">
+          
+            <h3 class="newsletter">Newsletter</h3>
+          
+          
+            <span class="center-text text-center"
+              >Subscribe to stay up to date on all the latest information and
+              seasonal specials!</span
+            >
+            <a href="#" class="btn btn-primary"
+                ><span>Sign Up</span></a
+              >
+          </div>
+          
+        </div>
+      </div>
+    </footer>
     <!-- script -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <!-- slick -->
     <script src="./js/slick.min.js"></script>
     <script>
-      $(document).ready(function () {
+      $(document).on("ready", function () {
         $(".slider-menu").slick({
           autoplay: true,
           fade: true,
+        });
+        $(".slick-slider").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
         });
       });
     </script>
