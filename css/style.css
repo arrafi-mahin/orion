@@ -117,7 +117,7 @@ body {
   z-index: -1;
   top: 0px;
   right: -15px;
-  padding-left: 320px;
+  padding-left: 350px;
   position: absolute;
   width: 0;
   height: 0;
@@ -146,6 +146,10 @@ body {
 .nav-scroll .menu-wrap .navbar-nav {
   float: right;
   margin-left: auto;
+}
+
+.nav-scroll .menu-wrap .navbar-nav .active a {
+  color: #c20505;
 }
 
 .nav-scroll .menu-wrap .navbar-nav .nav-link {
@@ -182,12 +186,15 @@ body {
   margin-left: auto;
 }
 
+.nav-top .menu-wrap .navbar-nav .active a {
+  color: #c20505;
+}
+
 .nav-top .menu-wrap .navbar-nav .nav-link {
   position: relative;
   padding-right: 1.1rem;
   padding-left: 1.1rem;
-  padding-top: 1.9rem;
-  padding-bottom: 1.9rem;
+  padding-bottom: 10px;
   font-family: Roboto-bold;
   font-size: 12px;
   font-weight: 700;
@@ -461,6 +468,7 @@ body {
           transform: rotate(270deg);
   position: absolute;
   left: -140px;
+  top: 100px;
   font-family: Poppins-mid;
 }
 
@@ -481,6 +489,7 @@ body {
 
 #product-slider .product-slider {
   margin: auto;
+  padding-left: 100px;
 }
 
 #product-slider .product-slider .slick-product-slider {
@@ -584,14 +593,20 @@ body {
     max-width: 170px;
   }
   .slider .slider-text .text-head {
-    font-size: 40px;
-  }
-  .slider .slider-text .text-sub {
     font-size: 20px;
   }
+  .slider .slider-text .text-sub {
+    font-size: 10px;
+  }
   .slider .slider-text a {
-    padding: 10px 30px;
-    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+  #product-slider .product-slider {
+    padding-left: 0;
+  }
+  #info-card .single-info-card .btn-primary {
+    padding: 5px 30px;
   }
 }
 
@@ -621,7 +636,7 @@ body {
     margin-top: -135px;
   }
   .slider-text {
-    padding-top: 120px;
+    padding-top: 60px;
   }
   .headerTop .wrapper .topBarRight .redBg {
     display: none;
