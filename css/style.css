@@ -125,28 +125,63 @@ body .headerTop .wrapper .topBarRight .redBg {
   margin-right: 0px;
 }
 
-body .navbar {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(black, rgba(255, 255, 255, 0));
-  padding: 2rem 0;
+body .nav-scroll {
+  background: #0c0c0c;
+  padding: 0;
 }
 
-body .navbar .menu-wrap {
+body .nav-scroll .menu-wrap {
   padding: 0 9.5%;
 }
 
-body .navbar .menu-wrap .logo {
+body .nav-scroll .menu-wrap .logo {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
   margin-right: 20px;
   position: relative;
   z-index: 35;
 }
 
-body .navbar .menu-wrap .navbar-nav {
+body .nav-scroll .menu-wrap .navbar-nav {
   float: right;
   margin-left: auto;
 }
 
-body .navbar .menu-wrap .navbar-nav .nav-link {
+body .nav-scroll .menu-wrap .navbar-nav .nav-link {
+  position: relative;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Roboto-bold;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body .nav-top {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+  padding: 2rem 0;
+}
+
+body .nav-top .menu-wrap {
+  padding: 0 9.5%;
+}
+
+body .nav-top .menu-wrap .logo {
+  margin-right: 20px;
+  position: relative;
+  z-index: 35;
+}
+
+body .nav-top .menu-wrap .navbar-nav {
+  float: right;
+  margin-left: auto;
+}
+
+body .nav-top .menu-wrap .navbar-nav .nav-link {
   position: relative;
   padding-right: 1.1rem;
   padding-left: 1.1rem;
@@ -385,7 +420,7 @@ body #product-slider .vartical-text {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   position: absolute;
-  left: -130px;
+  left: -140px;
   font-family: Poppins-mid;
 }
 
@@ -405,7 +440,7 @@ body #product-slider .vartical-text .small-text {
 }
 
 body #product-slider .product-slider {
-  margin: 0 auto;
+  margin: auto;
 }
 
 body #product-slider .product-slider .slick-product-slider {

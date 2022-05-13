@@ -18,6 +18,7 @@
   font-family: Poppins-mid;
   src: url("../fonts/Poppins-Medium.otf");
 }
+
 body {
   padding-top: 135px;
   .headerTop {
@@ -100,8 +101,37 @@ body {
       }
     }
   }
+  .nav-scroll {
+    background: #0c0c0c;
+    padding: 0;
+    .menu-wrap {
+      padding: 0 9.5%;
+      .logo {
+        transform: scale(0.5);
+        margin-right: 20px;
+        position: relative;
+        z-index: 35;
+      }
+      .navbar-nav {
+        float: right;
+        margin-left: auto;
 
-  .navbar {
+        .nav-link {
+          position: relative;
+          padding-right: 1.1rem;
+          padding-left: 1.1rem;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-family: Roboto-bold;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .nav-top {
     background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0));
     padding: 2rem 0;
     .menu-wrap {
@@ -130,6 +160,7 @@ body {
       }
     }
   }
+
   // slider
 
   .slider {
@@ -328,7 +359,7 @@ body {
     .vartical-text {
       transform: rotate(270deg);
       position: absolute;
-      left: -130px;
+      left: -140px;
 
       font-family: Poppins-mid;
       .big-text {
@@ -346,7 +377,7 @@ body {
       }
     }
     .product-slider {
-      margin: 0 auto;
+      margin: auto;
       .slick-product-slider {
         position: relative;
 
