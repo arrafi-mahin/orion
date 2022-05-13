@@ -274,20 +274,36 @@ body {
   #info-box {
     .single-info-box {
       &:hover {
-        .single-info-icon {
-          transform: scale(1.5);
+        .single-info-icon-wrapper .single-info-icon {
+          border: 2px solid #ffffff;
         }
       }
+
       background-size: cover !important;
       padding: 85px 120px;
       background-size: cover;
       background-repeat: no-repeat;
       padding: 85px 100px;
       text-align: center;
-      .single-info-icon {
+      .single-info-icon-wrapper {
         margin-bottom: 50px;
         transition: 0.4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .single-info-icon {
+          width: 150px;
+          height: 150px;
+          border: 2px solid transparent;
+          transition: 0.4s;
+          border-radius: 50%;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
+
       h3 {
         font-family: Roboto-Bold;
         font-size: 40px;
