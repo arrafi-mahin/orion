@@ -10,17 +10,17 @@
 
 @font-face {
   font-family: Roboto-Regular;
-  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family: Poppins-bold;
-  src: url("../fonts/Poppins-ExtraBold.otf");
+  src: url(../fonts/Poppins-ExtraBold.otf);
 }
 
 @font-face {
   font-family: Poppins-mid;
-  src: url("../fonts/Poppins-Medium.otf");
+  src: url(../fonts/Poppins-Medium.otf);
 }
 
 body {
@@ -166,8 +166,8 @@ body {
 }
 
 .nav-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0));
   padding: 2rem 0;
 }
 
